@@ -1,5 +1,0 @@
-num = list(map(int, input("Enter a list of numbers: ").split()))
-max_element = max(num)
-min_element = min(num)
-print("Maximum element is: ", max_element)
-print("Maximum element is: ", min_element)
