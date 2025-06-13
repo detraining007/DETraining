@@ -1,0 +1,19 @@
+ a=100
+ b=300
+ temp=a
+ a=b
+ b=temp
+ print(a)
+300
+ print(b)
+100
+>
+ a="harika"
+ b="teja"
+ temp=a
+ a=b
+ b=temp
+ print(a)
+teja
+print(b)
+harika
