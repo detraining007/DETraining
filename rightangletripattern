@@ -1,0 +1,4 @@
+n=int(input("Enter the number of Rows: "))
+for i in range(n):
+    print((chr(65+i)+' ')*(i+1))
+            
