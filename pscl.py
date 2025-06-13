@@ -1,4 +1,4 @@
-cdef pascal_triangle(n):
+def pascal_triangle(n):
     print("\nPascal's Triangle:\n")
     for i in range(n):
         print(" " * (n - i), end="")  
