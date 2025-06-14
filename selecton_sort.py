@@ -11,3 +11,4 @@ for i in range(n):
             min_ind=l[j]
     l[i],l[min_ind]=l[min_ind],l[i]
 print(l)
+
