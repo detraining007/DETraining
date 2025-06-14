@@ -65,7 +65,6 @@ while(con):
                     ri=1
                 if j-1 >= 0:
                     le=1
-    print(f"operations that can be done {u},{d},{ri},{le}")
     if u == 0 and d == 1 and ri == 1 and le == 0:
         choice=input("You can go down or right ? Enter your choice:")
         if choice=="down":
