@@ -36,6 +36,7 @@ while True:
         else :
             break
 print(F'computer wins {c_w} User wins{u_w}')
+print()
         
 
  
