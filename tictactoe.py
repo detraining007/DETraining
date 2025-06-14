@@ -7,11 +7,11 @@ x=sample(shuffle_lst,1)#taking random no
 for i in x:
     x1=i
 
-sort_lst=[-1 if i==x1 else i for i in sort_lst] #sorted list lo -1 at pos of random number
+sort_lst=["_" if i==x1 else i for i in sort_lst] #sorted list lo -1 at pos of random number
 
 for i in range(0,n*n):#replacing random no with -1
     if shuffle_lst[i]==x1:
-        shuffle_lst[i]=-1
+        shuffle_lst[i]="_"
 
 shuffle_2d=[shuffle_lst[i:i+n] for i in range(0,n*n,n)]
 sort_lst_2d=[sort_lst[i:i+n] for i in range(0,n*n,n)]
@@ -20,7 +20,7 @@ print("***THE ORIGINAL 2D LIST IS:***")
 for i in range(0,n):#shuffle list printing and taking index of -1
     for j in range(0,n):
         print(sort_lst_2d[i][j],end=" ")
-        if sort_lst_2d[i][j]==-1:
+        if sort_lst_2d[i][j]=="_":
             r,c=i,j
     print("\n")
 
@@ -29,7 +29,7 @@ print("***THE SHUFFLED 2D LIST IS:***")
 for i in range(0,n):#shuffle list printing and taking index of -1
     for j in range(0,n):
         print(shuffle_2d[i][j],end=" ")
-        if shuffle_2d[i][j]==-1:
+        if shuffle_2d[i][j]=="_":
             r,c=i,j
     print("\n")
 
@@ -56,7 +56,7 @@ while(con):
     le=0#left
     for i in range(0,n):
         for j in range(0,n):
-            if shuffle_2d[i][j]==-1:
+            if shuffle_2d[i][j]=="_":
                 if  i-1 >= 0:
                     u=1 
                 if i+1 < n:
@@ -164,11 +164,4 @@ while(con):
     if check==0:
         print("CONGRATS YOU WON")
         con=0
-print("***THE PROGRAM ENDED***")
-
-    
-    
-    
-    
-                
-                    
+print("***THE PROGRAM ENDED***")                  
