@@ -1,0 +1,13 @@
+# Using generator and yield : lazzy evaluation
+
+
+def generate_item(n):
+    for i in range(1,n+1):
+        yield(i)
+
+for i in generate_item(7):
+    print("Generated Item:",i)
+
+
+# if_name_=="_main_":
+#     n=
