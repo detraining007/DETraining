@@ -2,7 +2,7 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 8,
+   "execution_count": null,
    "id": "00d7374b-9b6a-4b6a-b583-a8c75220d44c",
    "metadata": {},
    "outputs": [
@@ -25,17 +25,12 @@
     "    for j in range(0, n-i+1):\n",
     "        print(' ', end='')\n",
     "\n",
-    "    # first element is always 1\n",
-    "    C = 1# Print Pascal's Triangle in Python\n",
-    "\n",
-    "# input n\n",
+    "    C = 1\n",
     "\n",
     "    for j in range(1, i+1):\n",
     "\n",
-    "        # first value in a line is always 1\n",
     "        print(' ', C, sep='', end='')\n",
     "\n",
-    "        # using Binomial Coefficient\n",
     "        C = C * (i - j) // j\n",
     "    print()"
    ]

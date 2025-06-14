@@ -2,7 +2,7 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 2,
+   "execution_count": null,
    "id": "39f3a856-8832-4ecd-8549-f50a3daca856",
    "metadata": {},
    "outputs": [
@@ -20,6 +20,7 @@
     }
    ],
    "source": [
+    "# break statement\n",
     "i=0\n",
     "while (i<10):\n",
     "    print(i)\n",
@@ -62,7 +63,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 18,
+   "execution_count": null,
    "id": "84303d09-7be8-41a7-ad04-e2f8323da6e5",
    "metadata": {},
    "outputs": [
@@ -75,6 +76,7 @@
     }
    ],
    "source": [
+    "#swap 2 numbers using tem\n",
     "list=[19,20,30,22,33,44,55,10]\n",
     "i,j= 2, 6\n",
     "tem=list[i]\n",
@@ -85,7 +87,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 1,
+   "execution_count": null,
    "id": "4324271c-365b-4d48-a5d1-9cfdb251e012",
    "metadata": {},
    "outputs": [
@@ -98,6 +100,7 @@
     }
    ],
    "source": [
+    "#p1\n",
     "a=5\n",
     "b=2\n",
     "c=5*2+3\n",
@@ -107,7 +110,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 8,
+   "execution_count": null,
    "id": "31cc4fa8-642f-46ed-8f4c-f5676f024686",
    "metadata": {},
    "outputs": [
@@ -120,6 +123,7 @@
     }
    ],
    "source": [
+    "#p3\n",
     "i=1\n",
     "while i<=5:\n",
     "    i=i+1\n",
