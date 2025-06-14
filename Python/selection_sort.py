@@ -1,13 +1,15 @@
-x = [6,3,2,8,1,0]
-sorted_list = []
-
-for i in range(len(x)):
-    min_ele = x[i]
-    for j in range(i,len(x)):
-        if x[j] < min_ele:
-            min_ele = x[j]
-        x[j] = x[i]
-        x[i] = min_ele
-print(x) 
+arr = [2,9,8,1,5,6,3]
+arr_len = len(arr)
 
 
+for i in range(arr_len-1):
+    min = arr[i]
+    for j in range(i+1,arr_len):
+        # print(arr[i],arr[j])
+        if arr[j] < min:
+            index = j
+            min = arr[j]
+    arr[index] = arr[i]
+    arr[i] = min
+    print(arr)
+            
