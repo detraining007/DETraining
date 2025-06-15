@@ -38,5 +38,5 @@ else:
             result_row.append(sum_product)
         result.append(result_row)
     print("Resultant Matrix after multiplication:")
-    for row in result:
-        print(row)
+    for Val in result:
+        print(Val)
