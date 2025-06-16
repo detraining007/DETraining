@@ -19,22 +19,3 @@ l2 = [1,2,3,4,57,7]
 
 l3 = [i+j for i,j in zip(l1,l2)]
 # print(l3)
-
-def pattern5(n):
-    #outer loop
-    for i in range(n):
-        #inner loops
-        # for letters
-        for j in range(n-i):
-            print(chr(65+j),end=' ')
-        #for spaces
-        for j in range(2*i-1):
-            print(' ',end=' ')
-        #for letters in rev
-        for j in range(n-i,0,-1):
-            if i == 0 and j == n-i:
-                continue
-            print(chr(65+j),end=' ')
-        print()
-
-pattern5(5)
