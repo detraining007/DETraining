@@ -10,30 +10,51 @@ def game(size):
       print(f'wrong no of elements,for {size} matrix elements must be {total_size},not less or more')
     
     Mat_values =[ [Matrix[val:val+size] for val in range(0,total_size,size)]]
-    for row in range(len(Mat_values)):
-       for col in  range(len(Mat_values[row])): 
-        print(Mat_values[row][col])
+    for row in range(len(Mat_values[0])):
+       for col in  range(len(Mat_values[0][row])): 
+         print(Mat_values[0][row][col],end = ' ')
+       print()
+       
     choice = "yes"
     i = 0
     j = 0
     element = Mat_values[0][i][j]
-    cursor = [0][i][j]
     correct= True
     while(choice == "yes"):
-      while(correct == True):
+      while correct:
          user_choice = input("Enter your choice between up,left,right,down:")
-         if(user_choice != "up" or "down" or "left" or "right"):
+         if user_choice not in ["up", "down" , "left" , "right"]:
             print("choice must be either up,down,left,right")
          else:
            print("correct choice")
            break
-      if(user_choice=="right"):
-         cursor = [0][i-1][j]
-         Mat_values[0][i-1][j] = element
-         Mat_values[0][i][j] = Mat_values[cursor]
-    for row in range(len(Mat_values)):
-       for col in range(len(Mat_values[row])):
-          print[col]
+      new_i,new_j = i,j
+      if(user_choice=="up" and i>0):
+         new_i -= 1
+      elif(user_choice=="down" and i<size-1):
+         new_i += 1
+      elif(user_choice=="left" and j>0):
+         new_j -= 1
+      elif(user_choice=="right" and j<size-1):
+         new_j += 1
+      else:
+         print("Wrong user choice,user choice must be either up or down or left or right or move is not possible")
+         continue
+      
+      #updating matrix
+      Mat_values[0][i][j],Mat_values[0][new_i][new_j] = Mat_values[0][new_i][new_j],Mat_values[0][i][j]
+      i,j = new_i,new_j
+
+      #printing updated matrix
+      print("Updated matrix:")
+      for row in range(len(Mat_values[0])):
+         for col in range(len(Mat_values[0][row])):
+            print(Mat_values[0][row][col],end= ' ')
+         print()
+      
+      choice = input("Do you want to continue,Type yes or no: ")
+        
+        
          
 
 
