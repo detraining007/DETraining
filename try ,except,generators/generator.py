@@ -7,5 +7,5 @@ if __name__=="__main__":
     print(generator.__next__())
     print(generator.__next__())
     print(generator.__next__())
-    '''for i in generator:#i is iterating over object generator
-        print(i)'''
+    for i in generator:#i is iterating over object generator
+        print(i)
