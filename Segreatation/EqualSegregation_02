@@ -1,0 +1,15 @@
+Mangoes=int(input("Enter the Number of Mangoes: "))
+Bags=int(input("Enter the No.of Bags: "))
+
+Base=Mangoes//Bags
+remainder=Mangoes%Bags
+
+distribution={}
+
+for i in range(Bags):
+    distribution[f"Bag {i+1}"]=Base
+
+for i in range(remainder):
+    distribution[f"Bag {i+1}"] += 1
+
+print(distribution)
