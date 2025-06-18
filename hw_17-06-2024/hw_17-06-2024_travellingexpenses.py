@@ -4,13 +4,16 @@ amount_list=[0 for i in range(0,n)]
 for i in range(1,n+1):
       print(i)
 total_amount=0
-for _ in d:
+for _ in (1,100):
     c=input("enter the expense name: ")
     if  c in d:
             amount = int(input(f"Enter the amount spent on {c}:"))
             person=int(input("enter the name of person as 0,1,2....:"))
             amount_list[person]+=amount
             total_amount+=amount
+    choice=input("Do you want to enter more expense:")
+    if choice=="No"or choice=="no"or choice=="No":
+          break
 share=total_amount//n
 print(f"the total amount is: {total_amount}")
 print(f"the share for each person is:{share}")

@@ -9,4 +9,7 @@ ind=0
 for i in range(1,r+1):
     c[ind]+=1
     ind+=1
-print(f"Things can be divided in chunck as {c}")
+c1=[]
+c1=list(filter(lambda x: x!=0,c ))
+
+print(c1)

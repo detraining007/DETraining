@@ -18,7 +18,7 @@ l1=[]
 for i in range(r1):
     row = []
     for j in range(c1):
-        row.append(int(input()))
+        row.append(int(input("enter a element: ")))
     l1.append(row)
 r2=int(input("enter number of rows in l2: "))
 c2=int(input("enter the number of columns in l2:"))
@@ -26,6 +26,6 @@ l2=[]
 for i in range(r2):
     row=[]
     for j in range(c2):
-        row.append(int(input()))
+        row.append(int(input("enter a element: ")))
     l2.append(row)
 print(mul(l1,l2))
