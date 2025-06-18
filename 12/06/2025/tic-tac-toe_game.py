@@ -16,9 +16,10 @@ def game(size):
        print()
        
     choice = "yes"
-    i = 0
-    j = 0
-    element = Mat_values[0][i][j]
+    i = int(input("Enter row value "))
+    j = int(input("Enter column value"))
+    element = [Mat_values[0][i][j]]
+    print(f'You are at {Mat_values[0][i][j]}')
     correct= True
     while(choice == "yes"):
       while correct:
@@ -51,6 +52,7 @@ def game(size):
          for col in range(len(Mat_values[0][row])):
             print(Mat_values[0][row][col],end= ' ')
          print()
+      print(f'You are at {Mat_values[0][i][j]}')
       
       choice = input("Do you want to continue,Type yes or no: ")
         

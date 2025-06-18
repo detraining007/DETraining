@@ -1,6 +1,7 @@
 def knapsack(chunks,items):
     if chunks > items:
-        print(f"{chunks} are greater than {items},chunks must be less than items!")
+        chunks = min(chunks,items)
+        #print(f"{chunks} are greater than {items},chunks must be less than items!")
     values = items//chunks
     remaining_values = items%chunks
     target = []
