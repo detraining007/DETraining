@@ -34,3 +34,14 @@ for i in range(0,num):
         break
 else:
     print("is a prime number")
+
+class datha():
+     def __init__(self):
+       self.a=100
+       self.b=200
+     def getter(self):
+        return self.a,self.b
+if __name__=="__main__":
+    obj=datha()
+print(obj.getter())
+
