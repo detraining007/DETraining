@@ -11,7 +11,7 @@ goal_matrix=[ [1, 2, 3],[4, 5, 6],[7, 8, 9]]
 
 while True:
     if matrix == goal_matrix:
-        print("🎉 Matrix sorted! You did it.")
+        print(" Matrix sorted! You did it.")
         break
 
     num = int(input("Enter number to move (0 to exit): "))
