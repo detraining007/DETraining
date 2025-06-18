@@ -73,5 +73,3 @@ while(isSorted(matrix) != True):
         print("Now we are at : ",matrix[idxs[0]][idxs[1]])
     else:
         print("Entered input not in - u, d, l, r \n Please enter one of them")
-
-# flaw - position is sticked to one value throughout the program
