@@ -37,6 +37,6 @@ else:
                 sum_product += matrix_01[i][k] * matrix_02[k][j]
             result_row.append(sum_product)
         result.append(result_row)
-    print("Resultant Matrix after multiplication:")
-    for Val in result:
-        print(Val)
+    print("Resultant Matrix after multiplication:")   
+    for val in result:
+        print(list(val))

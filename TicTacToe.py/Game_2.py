@@ -13,6 +13,7 @@ def initialize_players():
             return 1
         print("Invalid input! Choose 0 or 1\n")
 
+
 def create_board():
     """Creating 3x3 game"""
     return np.full((3, 3), -1, dtype=int)
@@ -38,10 +39,11 @@ def get_move(player):
             print("Numbers only please!")
 
 def check_win(board, player):
-    return (any(np.all(board == player, axis=1)) or 
+    return (any(np.all(board == player, axis=1)) or  #Rows
             any(np.all(board == player, axis=0)) or  # Columns
             np.all(np.diag(board) == player) or      # Main diagonal
-            np.all(np.diag(np.fliplr(board)) == player))  # Anti-diagonal
+            np.all(np.diag(np.fliplr(board)) == player))  # Anti-diagonal 
+
 
 def play_game():
     current_player = initialize_players()
@@ -56,14 +58,14 @@ def play_game():
             if board[row, col] == -1:
                 break
             print("Position already occupied!")
-        
-        # Updated board matrix
+
+        # Updated board matrix 
         board[row, col] = current_player
         
         # Check wining using matrix patterns
         if check_win(board, current_player):
-            display_board(board)
-            print(f"Player {current_player+1} wins!")
+            display_board(board)                       
+            print(f"Player {current_player+1} wins!")       
             return
         current_player = 1 - current_player
     
@@ -73,3 +75,5 @@ def play_game():
 
 if __name__ == "__main__":
     play_game()
+
+
