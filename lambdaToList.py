@@ -8,7 +8,23 @@ odd  = [num for num in numbers if (lambda x: x % 2 == 1)(num)]
 print("Even numbers:", even)
 print("Odd numbers:", odd)
 
+'''
+Output:
+
+Even numbers: [2, 4, 6, 8]
+Odd numbers: [3, 5, 7]
+
+'''
+
 # list comprehension using multiple loops
 
 list = lambda: [(x + y) for x in range(3) for y in range(3)]
 print(list())
+
+
+'''
+Output:
+
+[0, 1, 2, 1, 2, 3, 2, 3, 4]
+
+'''

@@ -8,6 +8,13 @@ new_list = list(generatoritem(6))
 print(new_list)
 
 '''
+Output:
+
+[0, 1, 2, 3, 4, 5]
+
+'''
+
+'''
 
 def generatoritem(n):
 	new_list = []

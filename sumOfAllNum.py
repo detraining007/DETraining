@@ -4,3 +4,9 @@ total = 0
 for i in list:
     total += i
 print(total)
+
+'''
+Output:
+
+55
+'''

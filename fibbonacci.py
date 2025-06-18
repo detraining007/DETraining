@@ -8,3 +8,9 @@ for i in list:
     n1 = n2
     n2 = sum
 print(sum)
+
+'''
+Output:
+13
+
+'''

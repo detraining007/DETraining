@@ -14,9 +14,20 @@ def generate_pattern():
 
         # Right side: mirror of left (including the peak letter)
         right_part = ''
-        for j in range(max_index - i , -1 , -1):
+        for j in range(max_index - i, -1 , -1):
             right_part += letters[j] + ' '
 
         print(left_part + middle_space + right_part.strip())
 
 generate_pattern()
+
+
+'''
+A B C D E F F E D C B A
+A B C D E   E D C B A
+A B C D       D C B A
+A B C           C B A
+A B               B A
+A                   A
+
+'''

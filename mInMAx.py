@@ -9,3 +9,10 @@ for i in list:
         max = i
 print(min)
 print(max)
+
+'''
+Output:
+
+2
+10
+'''

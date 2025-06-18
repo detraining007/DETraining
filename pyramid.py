@@ -14,3 +14,19 @@ def PyramidPattern(number_of_rows):
 
 number_rows = int(input("Enter the number of rows : "))
 PyramidPattern(number_rows)
+
+'''
+Output:
+
+Enter the number of rows : 5
+         *
+       *   *
+     *   *   *
+   *   *   *   *
+ *   *   *   *   *
+   *   *   *   *
+     *   *   *
+       *   *
+         *
+
+'''

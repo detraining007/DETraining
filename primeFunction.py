@@ -16,3 +16,11 @@ if __name__ == "__main__":
         print(number , " is a prime")
     else:
         print(number , "not a prime")
+
+'''
+Output:
+
+enter a number : 9
+9 not a prime
+
+'''

@@ -22,3 +22,30 @@ if __name__ == "__main__":
 		if cont != "yes":
 			print("Thank you!")
 			break
+
+'''
+Output:
+
+Enter number1: 4
+Enter number2: 5
+Enter choice (1-Add, 2-Sub, 3-Mul, 4-Div): 3
+20
+Do you want to continue? (yes/no): yes
+Enter number1: 4
+Enter number2: 5
+Enter choice (1-Add, 2-Sub, 3-Mul, 4-Div): 1
+9
+Do you want to continue? (yes/no): yes
+Enter number1: 4
+Enter number2: 5
+Enter choice (1-Add, 2-Sub, 3-Mul, 4-Div): 2
+-1
+Do you want to continue? (yes/no): yes
+Enter number1: 4
+Enter number2: 5
+Enter choice (1-Add, 2-Sub, 3-Mul, 4-Div): 4
+0
+Do you want to continue? (yes/no): no
+Thank you!
+
+'''
