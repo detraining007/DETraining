@@ -25,9 +25,9 @@ if __name__ == "__main__":
     print("Before swapping")
     for row in matrix:
         print(row)
-
-    #To swap multiple times based on your requirements
     while opinion=='yes':
+
+
         try:
            target1 = int(input("Please select 1st element which you need to swap"))
            target2 = int(input("Please select 2nd element which you need to swap"))
@@ -51,5 +51,3 @@ if __name__ == "__main__":
             print("Cannot find elements")
             print("Do you want still swap as per your requirements ? if so")
             opinion = input("Enter yes/no").lower()
-            while opinion not in ["yes", "no"]:
-                opinion = input("Enter yes/no: ").lower()
