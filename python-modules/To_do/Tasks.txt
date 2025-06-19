@@ -1,0 +1,16 @@
+
+
+19 Jun 2025
+sorting Matrix
+transposing matrix
+
+Till now
+Bubble, selection sort
+chunking
+knapsack
+Matrix multiplication
+Tic Tac Toe
+Expense Sharing
+Pascal's Triangle
+Pattern Printing
+list comprehension
