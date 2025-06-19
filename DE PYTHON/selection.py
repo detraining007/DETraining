@@ -5,8 +5,9 @@ def selection_sort(arr):
         for j in range(i+1, n):
             if arr[j] < arr[min_index]:
                 min_index = j
-        arr[i], arr[min_index] = arr[min_index], arr[i]  
-
-arr = eval(input("enter the numbers: "))
-selection_sort(arr)
-print("Sorted array:", arr)
+        arr[i], arr[min_index] = arr[min_index], arr[i] 
+    return arr 
+if __name__ == '__main__':
+    arr = eval(input("enter the numbers: "))
+    selection_sort(arr)
+    print("Sorted array:", arr)

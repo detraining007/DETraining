@@ -4,8 +4,9 @@ def bubble_sort(arr):
         for j in range(n - i - 1):  
             if arr[j] > arr[j + 1]:
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]  
-            print(arr)
+    print(arr)
 
-arr = [64, 25, 12, 22, 11]
-bubble_sort(arr)
-print("Sorted array:", arr)
+if __name__ == '__main__':
+    arr = [64, 25, 12, 22, 11]
+    bubble_sort(arr)
+    print("Sorted array:", arr)
