@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 n=int(input("enter length of list: "))
 l=[]
 for i in range(n):
@@ -10,7 +10,7 @@ for i in range(0,n-1):
         if l[j]>l[j+1]:
             
             l[j],l[j+1]=l[j+1],l[j]
-=======
+
 n=int(input("enter length of list: "))
 l=[]
 for i in range(n):

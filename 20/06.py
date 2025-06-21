@@ -49,7 +49,20 @@ print(text_match("aa@$%^bbbb"))
 ip = 757897439575762
 string = re.sub('\'.[7]'*','.')'''
 
+'''patterns = ['frog', 'dog', 'horse']
+text = 'The quick brown fox jumps over the lazy dog'
+for pattern in patterns:
+    print("searching for "%s" in "%s" -> % (pattern, text),)'''
 
+
+
+phone = ["1234-567-890","123-456-789",
+         "234-543-1230","123-678-098"]
+
+for num in phone:
+    if re.compile(r"^((\(\d(3)\)|\d(3))[- ]?)?\d(3)[- ]?\d(4)$").fullmatch(num):
+        print(f"{num} is a valid number")
+              
                 
 
 

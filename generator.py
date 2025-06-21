@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 def generateItem(n):
     for i in range(n):
         yield i
@@ -9,7 +9,7 @@ if __name__=="__main__":
     print(generator.__next__())
     print(generator.__next__())
     '''for i in generator:#i is iterating over object generator
-=======
+
 def generateItem(n):
     for i in range(n):
         yield i

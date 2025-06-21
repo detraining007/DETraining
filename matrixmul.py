@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 def mul(l1,l2):
     r1=len(l1)
     c1=len(l1[0])

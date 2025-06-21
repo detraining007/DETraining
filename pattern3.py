@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 n=int(input("enter a number"))
 try:
     if n>26:
@@ -25,7 +25,7 @@ if n<=25:
             for k in range(x2,64,-1):
                 print(f"{chr(k)}",end="")
         m-=1
-=======
+
 n=int(input("enter a number"))
 try:
     if n>26:
@@ -52,5 +52,5 @@ if n<=25:
             for k in range(x2,64,-1):
                 print(f"{chr(k)}",end="")
         m-=1
->>>>>>> 95904fb3354e403a37a876779019fbdd2e0d26f6
-        print("\n")
+95904fb3354e403a37a876779019fbdd2e0d26f6
+print("\n")

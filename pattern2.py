@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import math
 n=int(input("enter a number"))
 c=3
@@ -17,7 +17,7 @@ for i in range(0,n):
         for k in range(0,s):
             print("*",end=" ")
         s-=2
-=======
+
 import math
 n=int(input("enter a number"))
 c=3
@@ -36,5 +36,5 @@ for i in range(0,n):
         for k in range(0,s):
             print("*",end=" ")
         s-=2
->>>>>>> 95904fb3354e403a37a876779019fbdd2e0d26f6
-    print("\n")
+95904fb3354e403a37a876779019fbdd2e0d26f6
+print("\n")

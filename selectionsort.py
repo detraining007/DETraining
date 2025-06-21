@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 n=int(input("enter length of list: "))
 l=[]
 for i in range(n):
@@ -11,7 +11,7 @@ for i in range(n):
         if l[j]<l[min_ind]:
             min_ind=l[j]
     l[i],l[min_ind]=l[min_ind],l[i]
-=======
+
 n=int(input("enter length of list: "))
 l=[]
 for i in range(n):

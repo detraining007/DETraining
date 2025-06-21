@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 n=int(input("enter the number of things: "))
 chuncks=int(input("enter the number of bags: "))
 c=[]
@@ -10,7 +10,7 @@ index=0
 for i in range(1,r+1):
     c[index]+=1
     index+=1
-=======
+    
 n=int(input("enter the number of things: "))
 chuncks=int(input("enter the number of chuncks: "))
 c=[]
