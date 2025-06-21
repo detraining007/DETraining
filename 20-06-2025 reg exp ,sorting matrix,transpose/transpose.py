@@ -6,7 +6,7 @@ for i in range(0,r):
     for j in range(0,c):
         temp.append(int(input("enter element:")))
     m.append(temp)
-#2nd matrix
+#2nd matrix before transpose
 print("2nd array before transpose:")
 for i in range(0,r):
     for j in range(0,c):
