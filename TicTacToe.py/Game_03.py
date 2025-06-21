@@ -22,7 +22,7 @@ while True:
         print('Invalid_Input:', e)
 
 # --- Correct Board Initialization ---
-matrix = np.full((3, 3), -1, dtype=int)  # -1 = empty
+matrix = np.full((3, 3), -1, dtype=int)  
 print("Initial Matrix:")
 for row in matrix:
     print(row)
@@ -82,3 +82,4 @@ if ans == "yes":
         print(row_disp)
 else:
     print("Game Over.")
+

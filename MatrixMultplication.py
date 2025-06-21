@@ -40,3 +40,4 @@ else:
     print("Resultant Matrix after multiplication:")   
     for val in result:
         print(list(val))
+3 

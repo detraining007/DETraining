@@ -8,7 +8,7 @@ class name:
 
 obj1 = name(30)
 obj2 = name(20)
-obj3= name(40)
+obj3=  name(40)
 obj4 = obj1 + obj2  +obj3
 print(obj4)
 

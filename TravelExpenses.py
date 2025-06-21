@@ -36,19 +36,4 @@ for name, bal in balances.items():
     else:
         print(f"{name} is settled up.")
 
-# Step 5: (Optional) Simple settlement suggestion
-print("\n--- Suggested Settlements ---")
-debtors = [(name, -bal) for name, bal in balances.items() if bal < 0]
-creditors = [(name, bal) for name, bal in balances.items() if bal > 0]
-i, j = 0, 0
-while i < len(debtors) and j < len(creditors):
-    debtor, debt = debtors[i]
-    creditor, credit = creditors[j]
-    pay = min(debt, credit)
-    print(f"{debtor} pays {creditor}: ₹{pay:.2f}")
-    debtors[i] = (debtor, debt - pay)
-    creditors[j] = (creditor, credit - pay)
-    if debtors[i][1] < 0.01:
-        i += 1
-    if creditors[j][1] < 0.01:
-        j += 1
+

@@ -16,7 +16,7 @@ class Name:
     def set_x(self,x,y):  #Setter Method
         self.x=x
         self.y=y
-        return self.x,self.y
+        return self.x,self.y  
     
 obj=Name()
 print(obj.set_x(50,60))

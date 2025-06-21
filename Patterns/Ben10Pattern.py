@@ -10,3 +10,5 @@ for row in range(1,Val):
   for col in range(row+1):
     print("*",end=" ")
   print()
+
+  
