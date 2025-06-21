@@ -1,11 +1,15 @@
-def bubble_sort(arr):
-    n = len(arr)
-    for i in range(n):
-        for j in range(0, n - i - 1):
-            if arr[j] > arr[j + 1]:
-                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+m1 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+m2 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
-arr = [64, 34, 25, 12, 22, 11, 90]
-print("Original array:", arr)
-bubble_sort(arr)
-print("Sorted array:", arr)
+l = len(m1)
+result = [[0] * l for _ in range(l)] 
+
+for i in range(l):
+
+    for j in range(l):
+        print((i,j),end = " ")
+        
+        print(j,i)
+        for k in range(l):
+            result[i][j] += m1[i][k] * m2[k][j]
+print(result)

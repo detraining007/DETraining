@@ -1,4 +1,3 @@
-
 def print_board(board):
     for row in board:
         print(" | ".join(row))
@@ -42,6 +41,12 @@ def main():
             print('It\'s a draw!')
             break
         current_player = 'O' if current_player == 'X' else 'X'
+
+def swap_numbers(a, b):
+    print(f"Before swapping: a = {a}, b = {b}")
+    a, b = b, a
+    print(f"After swapping: a = {a}, b = {b}")
+    return a, b
 
 if __name__ == '__main__':
     main()

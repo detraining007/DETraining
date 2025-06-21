@@ -1,11 +1,11 @@
-def iseven (n):
-    return(n % 2 == 0)
+def isodd(n):
+    return(n % 4 == 0)
 
 
 
 if __name__ + "__main__":
-    n = 56
-    if iseven (n):
+    n = 12
+    if isodd(n):
         print("true")
     else:
         print("false")
