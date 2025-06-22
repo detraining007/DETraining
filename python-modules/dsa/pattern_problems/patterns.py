@@ -59,7 +59,7 @@ def printPattern5(n):
 
 if(__name__ == "__main__"):
     
-    printPattern4(6)
+    printPattern3(6)
 
 
 # A B C D E D C B A

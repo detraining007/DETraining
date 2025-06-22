@@ -1,4 +1,12 @@
 
+20 Jun 2025
+regex functions
+regex patterns
+how we use symbols * + $ . ^ etc
+
+
+
+
 
 19 Jun 2025
 sorting Matrix
