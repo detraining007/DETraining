@@ -3,7 +3,7 @@ class Name:
         self.x=x
         self.y=y
 
-
+        
     def get_x(self): #Getter method
         return self.x,self.y
     
