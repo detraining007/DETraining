@@ -2,11 +2,9 @@ class Test(object):
     def __init__(self,x):
         self.x = x
     def __add__(self, other):
-        return Test(self.x + other.x)
+        return self.x + other.x
 obj = Test(10)
 obj1 = Test(20)
 obj2 = Test(30)
 obj3 = obj +obj1
-obj4 = obj2 +obj3
-
-print(obj3.x,obj4.x)
+print(obj3 + obj2)

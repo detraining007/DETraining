@@ -15,13 +15,15 @@ def create_matrix(row,column):
 def matrix_multiply(matrix1 , matrix2):
     if column_1 == row_2:
        #Initializing result matrix with zeros
+       rows_1, cols_1 = len(matrix1), len(matrix1[0])
+       rows_2, cols_2 = len(matrix2), len(matrix2[0])
        # example i*j matrix i1*j1 matrix multiplied then formation new matrix is i*j1 matrix
-       result = [[0] * column_2 for _ in range(row_1)]
+       result = [[0] * cols_2 for _ in range(rows_1)]
        print("multiplication of matrix1 and matrix2")
        # Matrix Multiplication Logic
-       for i in range(row_1):
-           for j in range(column_2):
-               for k in range(column_1):
+       for i in range(rows_1):
+           for j in range(cols_2):
+               for k in range(cols_1):
                    result[i][j] += matrix1[i][k] * matrix2[k][j]
        return result
     else:

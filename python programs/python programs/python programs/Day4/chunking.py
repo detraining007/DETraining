@@ -15,5 +15,4 @@ no_boxes = int(input("Enter no. of boxes"))
 result = chunking_items(items,no_boxes)
 
 for row in result:
-    if len(row)!=0:
-      print(row,len(row),"items")
+    print(row)

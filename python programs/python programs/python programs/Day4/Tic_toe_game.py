@@ -18,17 +18,16 @@ def swap_elements(matrix, index1, index2):
     else:
         return "One or both elements not found"
 
+matrix = [[7, 4, 8,10], [1, 5, 3,11], [6, 9,12, 2]]
 
 if __name__ == "__main__":
     opinion = "yes"
-    matrix = [[7, 4, 8, 10], [1, 5, 3, 11], [6, 9, 12, 2]]
-
     print("Before swapping")
     for row in matrix:
         print(row)
-
-    #To swap multiple times based on your requirements
     while opinion=='yes':
+
+
         try:
            target1 = int(input("Please select 1st element which you need to swap"))
            target2 = int(input("Please select 2nd element which you need to swap"))
@@ -52,5 +51,3 @@ if __name__ == "__main__":
             print("Cannot find elements")
             print("Do you want still swap as per your requirements ? if so")
             opinion = input("Enter yes/no").lower()
-            while opinion not in ["yes", "no"]:
-                opinion = input("Enter yes/no: ").lower()
