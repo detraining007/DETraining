@@ -32,3 +32,7 @@ list1 = [3,1,6,9,2,0,4]
 print(list1)
 selectionSort(list1)
 print(list1)
+
+
+
+
