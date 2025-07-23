@@ -1,9 +1,9 @@
 def Alphabets(line):
-    ends = 70
+    ends = 69
     for alphabets in range(line):
         start = 65
         ends2 = ends
-        for left_alpha in range(alphabets,line):
+        for left_alpha in range(alphabets,line+1):
             print(chr(start),end=" ")
             start += 1
         for down_left in range(alphabets):
