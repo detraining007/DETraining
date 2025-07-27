@@ -1,4 +1,4 @@
-from Bubble_Sort import B_Sort
+from bubble_sort import B_Sort
 
 n = 3
 m1 = [[10,1,5],[4,8,9],[2,3,7]]

@@ -12,5 +12,5 @@ for i in range(arr_len-1):
             min = arr[j]
     arr[index] = arr[i]
     arr[i] = min
-    print(arr)
+print(arr)
             
