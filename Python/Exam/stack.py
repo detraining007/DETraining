@@ -12,10 +12,7 @@ def pop_stack():
     print("The Stack after poping the element:",stack)
 
 
-
 stack = []
-
-
 
 print('''
   ____  _             _              ____            _        ______             
