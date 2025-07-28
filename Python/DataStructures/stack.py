@@ -1,6 +1,6 @@
 def push_stack():
     n = int(input("Enter a number you want to push"))
-    stack.insert(0,n)
+    stack.append(n) 
     print("----------------Push in process----------------------------\n" \
     "--------------------Successfully Pushed into Stack-----------------------")
     print("The Stack after pushing:",stack)
