@@ -10,6 +10,7 @@ class Derived(Base):
         super().__init__(value1,value2)
         print("This is Derived class")
     def add(self):
+         print(super().add())
          print(f'{self.value1}-{self.value2}')
          return 
        
